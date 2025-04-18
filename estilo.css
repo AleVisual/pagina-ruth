@@ -656,3 +656,28 @@ html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
+/* esto es para el contador */
+.contador-visitas {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.texto-visitas {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  color: #111111;
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+
+.bloque-contador img {
+  pointer-events: none; /* Esto desactiva clics en la imagen */
+  user-select: none;    /* Esto evita que se pueda seleccionar con el mouse */
+}
+
+.contador-visitas a {
+  pointer-events: none !important; /* Evita que se pueda hacer clic */
+  cursor: default !important;      /* Cambia la manito por el cursor normal */
+  text-decoration: none !important;
+}
+
