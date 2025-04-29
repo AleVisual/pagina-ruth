@@ -81,5 +81,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// --- LIGHTBOX PARA IMÁGENES ---
+document.querySelectorAll(".imagen-lightbox-chocolates").forEach(enlace => {
+  enlace.addEventListener("click", e => {
+    e.preventDefault();
+    const imagenGrande = document.createElement("div");
+    imagenGrande.classList.add("lightbox-overlay");
+    imagenGrande.innerHTML = `<img src="${enlace.href}" alt=""><span style="position:absolute;top:20px;right:30px;font-size:30px;color:white;cursor:pointer;">&times;</span>`;
+    document.body.appendChild(imagenGrande);
+
+    imagenGrande.addEventListener("click", () => {
+      imagenGrande.remove();
+    });
+  });
+});
+
+
+
   
   
