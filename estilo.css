@@ -681,3 +681,173 @@ html {
   text-decoration: none !important;
 }
 
+/* Estilo para la sección de Productos en Chocolates */
+#productos-chocolates h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5em;  /* Tamaño del título igual al de otras secciones */
+  font-weight: bold;
+  box-shadow: 5px 8px 6px rgba(0,0,0, 0.3);
+  text-shadow: 5px 4px 4px rgba(0,0,0, 0.3);
+  color: #d15f84;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Mayúsculas para un toque más profesional */
+  letter-spacing: 1px;
+}
+
+#productos-chocolates {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo igual que la galería */
+}
+
+#productos-chocolates h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#productos-chocolates .productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#productos-chocolates .producto-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+#productos-chocolates .producto-item img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+#productos-chocolates .producto-item p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Estilo para las imágenes en la sección de productos en chocolates */
+#productos-chocolates .producto-item {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+}
+
+#productos-chocolates .producto-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo hover para las imágenes */
+#productos-chocolates .producto-item:hover img {
+  transform: scale(1.05); /* Efecto de zoom */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+}
+
+/* Asegurando que los enlaces de lightbox se comporten de manera correcta */
+.imagen-lightbox-chocolates {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+}
+
+.imagen-lightbox-chocolates {
+  display: block; /* Asegura que el enlace sea un bloque clickeable */
+  width: 100%;    /* Asegura que el enlace cubra todo el ancho del contenedor */
+  height: 100%;   /* Asegura que el enlace cubra toda la altura del contenedor */
+}
+
+/* === Estilos para la sección "Productos en Chocolates" === */
+
+/* Contenedor de cada producto */
+#productos-chocolates .producto-item {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  border: 1px solid #eb739b; /* Borde rosa */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 5px 4px 4px rgba(0,0,0,0.3);
+}
+
+/* Imagen dentro del contenedor */
+#productos-chocolates .producto-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el contenedor */
+#productos-chocolates .producto-item:hover {
+  transform: scale(1.05); /* Efecto de zoom */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* === Estilo para textos destacados en productos de chocolate === */
+.texto-chocolate1{
+  font-weight: bold; /* Negrita */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+  color: #333; /* Color base del texto (ajustable si querés otro tono) */
+}
+.texto-chocolate2{
+  font-weight: bold; /* Negrita */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+  color: #333; /* Color rosa claro */
+}
+
+.texto-chocolate3{
+  font-weight: bold; /* Negrita */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+  color: #333; /* Color rosa claro */
+}
+
+.texto-chocolate4{
+  font-weight: bold; /* Negrita */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+  color: #333; /* Color rosa claro */
+}
+
+.texto-chocolate5{
+  font-weight: bold; /* Negrita */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+  color: #333; /* Color rosa claro */
+}
+
+/* === Etiqueta "Nuevo" para productos recientes === */
+.etiqueta-nuevo {
+  position: absolute;
+  background-color: #e91e63; /* Rosa fuerte */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+  z-index: 2;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Aseguramos que el producto-item tenga posición relativa para posicionar bien la etiqueta */
+.producto-item {
+  position: relative;
+}
